@@ -1,22 +1,23 @@
 <mat-toolbar color="primary" class="navbar">
   <!-- Logo -->
-  <img src="EP-Logo.png" alt="Eiddo Power Logo" class="logo">
+  <img src="logo.png" alt="Eiddo Power Logo" class="logo">
 
   <!-- Navigation Links -->
   <span class="nav-links">
     <a mat-button routerLink="/" class="nav-link">Home</a>
-    <a mat-button routerLink="/about-us" class="nav-link">About Us</a>
+    <a mat-button routerLink="/about" class="nav-link">About Us</a>
+    <a mat-button routerLink="/services" class="nav-link">Services</a>
 
-    <!-- Services Dropdown -->
+    <!-- Services Dropdown
     <mat-menu #servicesMenu="matMenu">
       <button mat-menu-item routerLink="/solar-energy-solutions">Solar Energy Solutions</button>
       <button mat-menu-item routerLink="/energy-management">Energy Management</button>
       <button mat-menu-item routerLink="/ppp-projects">PPP Projects</button>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="servicesMenu" class="nav-link">Services</button>
+    <button mat-button [matMenuTriggerFor]="servicesMenu" class="nav-link">Services</button> -->
 
     <a mat-button routerLink="/projects" class="nav-link">Projects</a>
     <a mat-button routerLink="/why-choose-us" class="nav-link">Why Choose Us</a>
-    <a mat-button routerLink="/contact-us" class="nav-link">Contact Us</a>
+    <a mat-button routerLink="/contact" class="nav-link">Contact Us</a>
   </span>
 </mat-toolbar>

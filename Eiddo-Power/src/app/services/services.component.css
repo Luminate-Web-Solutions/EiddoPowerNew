@@ -1,0 +1,77 @@
+/* General Styles */
+.services-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin-bottom: 20px;
+  }
+  
+  .services-hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .services-hero h1 {
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .services-tagline {
+    color: #34495e;
+    font-size: 1.2rem;
+  }
+  
+  .services-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .services-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .services-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  .services-list li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .call-to-action {
+    text-align: center;
+    background-color: #27ae60;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: #2ecc71;
+  }
+  
