@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #F2F2F2; /* Background color from the palette */
+    color: #153361; /* Text color from the palette */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 16px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #153361; /* Text color from the palette */
+    margin: 0 8px;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #FEB038; /* Hover color from the palette */
+  }
