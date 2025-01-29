@@ -1,0 +1,86 @@
+.footer {
+    background-color: #153361; /* Background color from the palette */
+    color: #F2F2F2; /* Text color from the palette */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #FEB038; /* Accent color for headings */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section ul li mat-icon {
+    margin-right: 10px;
+    color: #FEB038; /* Icon color from the palette */
+  }
+  
+  .footer-link, .footer-contact {
+    color: #F2F2F2; /* Text color from the palette */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-link:hover, .footer-contact:hover {
+    color: #FEB038; /* Hover color from the palette */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: #F2F2F2; /* Icon color from the palette */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .social-icons a:hover {
+    color: #FEB038; /* Hover color from the palette */
+  }
+  
+  /* Fix Twitter icon visibility */
+  .twitter-icon {
+    color: #1DA1F2; /* Twitter brand color */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #F2F2F2; /* Border color from the palette */
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }

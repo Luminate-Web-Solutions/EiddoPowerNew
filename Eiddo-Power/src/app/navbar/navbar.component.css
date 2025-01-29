@@ -1,28 +1,38 @@
 .navbar {
-    background-color: #F2F2F2; /* Background color from the palette */
-    color: #153361; /* Text color from the palette */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-  }
-  
-  .logo {
-    height: 50px; /* Adjust as needed */
-    margin-right: 16px;
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links a {
-    color: #153361; /* Text color from the palette */
-    margin: 0 8px;
-    text-decoration: none;
-  }
-  
-  .nav-links a:hover {
-    color: #FEB038; /* Hover color from the palette */
-  }
+  background-color: #153361; /* Background color from the palette */
+  color: #F2F2F2; /* Text color from the palette */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.logo {
+  height: 50px; /* Adjust as needed */
+  margin-right: 16px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #F2F2F2; /* Text color from the palette */
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 500; /* Make text slightly bold */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+  color: #FEB038; /* Hover color from the palette */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Dropdown button styling */
+.nav-link[matMenuTriggerFor] {
+  display: flex;
+  align-items: center;
+}
