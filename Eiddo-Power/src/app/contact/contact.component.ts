@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ContactService } from '../contact.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { ContactService } from '../services/contact.service';
 
 @Component({
   selector: 'app-contact',
   standalone: false,
+  
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
@@ -32,27 +33,17 @@ export class ContactComponent implements OnInit {
   onSubmit(): void {
     if (this.contactForm.valid) {
       this.loading = true;
-      this.contactService.submitContactForm(this.contactForm.value).subscribe({
-        next: (response) => {
-          console.log('Success:', response);
-          this.snackBar.open('Message sent successfully!', 'Close', {
-            duration: 3000,
-            horizontalPosition: 'right',
-            verticalPosition: 'top'
-          });
+      this.contactService.submitContactForm(this.contactForm.value).subscribe(
+        response => {
+          this.loading = false;
+          this.snackBar.open('Message sent successfully!', 'Close', { duration: 3000 });
           this.contactForm.reset();
-          this.loading = false;
         },
-        error: (error) => {
-          console.error('Error:', error);
-          this.snackBar.open('Failed to send message. Please try again.', 'Close', {
-            duration: 3000,
-            horizontalPosition: 'right',
-            verticalPosition: 'top'
-          });
+        error => {
           this.loading = false;
+          this.snackBar.open('Failed to send message. Please try again.', 'Close', { duration: 3000 });
         }
-      });
+      );
     }
   }
 }

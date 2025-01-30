@@ -15,17 +15,12 @@
 }
 
 .contact-container {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 1280px; 
-  background-color: #fefefe; 
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  text-align: center;
+  flex: 1;
+  max-width: 800px;
 }
-
+.location{
+  padding-right: 10px;
+}
 
 .contact-header {
   text-align: center;
@@ -33,7 +28,7 @@
 }
 
 .contact-header h2 {
-  color: #4682B4;
+  color: #153361; /* Updated color */
   font-size: 2.5em;
   margin-bottom: 15px;
 }
@@ -58,7 +53,7 @@
 }
 
 .contact-info h3 {
-  color: #4682B4;
+  color: #153361; /* Updated color */
   font-size: 1.8em;
   margin-bottom: 20px;
 }
@@ -70,7 +65,7 @@
 }
 
 .info-item mat-icon {
-  color: #4682B4;
+  color: #153361; /* Updated color */
   margin-right: 10px;
 }
 
@@ -79,7 +74,7 @@
 }
 
 .business-hours h4 {
-  color: #4682B4;
+  color: #153361; /* Updated color */
   margin-bottom: 10px;
 }
 
@@ -110,7 +105,7 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #4682B4;
+  border-color: #153361; /* Updated color */
 }
 
 .message-input {
@@ -119,7 +114,7 @@
 }
 
 button[type="submit"] {
-  background-color: #4682B4;
+  background-color: #153361; /* Updated color */
   color: white;
   padding: 15px 30px;
   border-radius: 30px;
@@ -134,7 +129,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #154d7a;
+  background-color: #0d274d; /* Updated color */
 }
 
 @media (max-width: 1200px) {
@@ -163,32 +158,6 @@ button[type="submit"]:hover {
   }
 }
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  /* right: 20px; */
-  width: 60px;
-  height: 60px;
-  z-index: 1000;
-  background-color: #25d366;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  animation: float 2s infinite;
-}
-
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
 /* Floating animation */
 @keyframes float {
   0% {
@@ -201,6 +170,7 @@ button[type="submit"]:hover {
     transform: translateY(0);
   }
 }
+
 .footer {
   margin-top: auto; /* add this to make the footer stick to the bottom */
 }

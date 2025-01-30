@@ -19,7 +19,7 @@
 }
 
 .nav-link {
-  color: #FEB038; /* Updated text color */
+  color: #fdfcfb !important;  /* Updated text color */
   margin: 0 8px;
   text-decoration: none;
   font-weight: 500; /* Make text slightly bold */
@@ -27,8 +27,13 @@
 }
 
 .nav-link:hover {
-  color: #FFD700; /* Updated hover color */
+  color: #FFD700 !important; /* Updated hover color */
   transform: translateY(-2px); /* Slight lift effect */
+}
+
+.nav-link-active {
+  color: #FFD700 !important; /* Highlight color */
+  font-weight: bold; /* Optional: Make the active link bold */
 }
 
 /* Dropdown button styling */

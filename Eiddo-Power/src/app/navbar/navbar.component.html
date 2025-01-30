@@ -4,10 +4,9 @@
 
   <!-- Navigation Links -->
   <span class="nav-links">
-    <a mat-button routerLink="/" class="nav-link">Home</a>
-    <a mat-button routerLink="/about" class="nav-link">About Us</a>
-    <a mat-button routerLink="/services" class="nav-link">Services</a>
-
+    <a mat-button routerLink="/" routerLinkActive="nav-link-active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a>
+    <a mat-button routerLink="/about" routerLinkActive="nav-link-active" class="nav-link">About Us</a>
+    <a mat-button routerLink="/services" routerLinkActive="nav-link-active" class="nav-link">Services</a>
     <!-- Services Dropdown
     <mat-menu #servicesMenu="matMenu">
       <button mat-menu-item routerLink="/solar-energy-solutions">Solar Energy Solutions</button>
@@ -15,9 +14,8 @@
       <button mat-menu-item routerLink="/ppp-projects">PPP Projects</button>
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="servicesMenu" class="nav-link">Services</button> -->
-
-    <a mat-button routerLink="/projects" class="nav-link">Projects</a>
-    <a mat-button routerLink="/whychooseus" class="nav-link">Why Choose Us</a>
-    <a mat-button routerLink="/contact" class="nav-link">Contact Us</a>
+    <a mat-button routerLink="/projects" routerLinkActive="nav-link-active" class="nav-link">Projects</a>
+    <a mat-button routerLink="/whychooseus" routerLinkActive="nav-link-active" class="nav-link">Why Choose Us</a>
+    <a mat-button routerLink="/contact" routerLinkActive="nav-link-active" class="nav-link">Contact Us</a>
   </span>
 </mat-toolbar>

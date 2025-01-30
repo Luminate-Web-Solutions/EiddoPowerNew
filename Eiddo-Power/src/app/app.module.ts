@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { provideHttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,11 +16,11 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
-import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { WhychooseusComponent } from './whychooseus/whychooseus.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,12 @@ import { WhychooseusComponent } from './whychooseus/whychooseus.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ContactComponent,
     FaqComponent,
     ServicesComponent,
     AboutComponent,
     ProjectsComponent,
-    WhychooseusComponent
+    WhychooseusComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +48,7 @@ import { WhychooseusComponent } from './whychooseus/whychooseus.component';
     MatInputModule
   ],
   providers: [
+    provideHttpClient(),
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

@@ -93,6 +93,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "submit_contact.php",
+                "input": "src/app",
+                "output": "/"
               }
             ],
             "styles": [
