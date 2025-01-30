@@ -55,27 +55,3 @@
     color: #555;
   }
   
-  
-  .call-to-action {
-    text-align: center;
-    background-color: #27ae60;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #27ae60;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .cta-button:hover {
-    background-color: #2ecc71;
-  }
-  
