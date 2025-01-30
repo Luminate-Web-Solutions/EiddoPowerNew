@@ -70,3 +70,25 @@
     font-size: 1.1rem;
     color: #444;
 }
+
+/* Ensuring all images scale well on different devices */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Styling for Hero Images */
+  .why-choose-hero-image, .services-hero-image, .ppp-hero-image {
+    width: 100%;
+    height: 400px; /* Adjust height based on your preference */
+    object-fit: cover;
+  }
+  
+  /* Generic Styling for Section Images */
+  .why-choose-image, .services-image, .ppp-image {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  

@@ -52,26 +52,30 @@
     color: #555;
   }
   
-  .call-to-action {
-    text-align: center;
-    background-color: #27ae60;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #27ae60;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .cta-button:hover {
-    background-color: #2ecc71;
-  }
-  
+  /* Ensuring all images scale well on different devices */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the Hero Image */
+.services-hero-image {
+  width: 100%;
+  height: 400px; /* Adjust height based on your preference */
+  object-fit: cover;
+}
+
+/* Generic Styling for Service Section Images */
+.services-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Optional: For smaller section images, e.g., PPP */
+.services-image {
+  max-width: 80%;
+  margin: 20px auto;
+}

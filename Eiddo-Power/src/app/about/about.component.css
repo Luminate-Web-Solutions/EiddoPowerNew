@@ -54,3 +54,55 @@
   font-size: 1.1rem;
   color: #555;
 }
+
+/* Ensuring all images scale well on different devices */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the Hero Image */
+.hero-image {
+  width: 100%;
+  height: 400px; /* Adjust height based on your preference */
+  object-fit: cover;
+}
+
+/* Styling for the Intro Image */
+.intro-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Vision and Mission Image */
+.vision-mission-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* CEO Image */
+.ceo-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+}
+
+/* Values Image */
+.values-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Team Image */
+.team-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
