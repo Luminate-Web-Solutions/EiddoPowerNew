@@ -19,7 +19,7 @@
 }
 
 .nav-link {
-  color: #F2F2F2; /* Text color from the palette */
+  color: #FEB038; /* Updated text color */
   margin: 0 8px;
   text-decoration: none;
   font-weight: 500; /* Make text slightly bold */
@@ -27,7 +27,7 @@
 }
 
 .nav-link:hover {
-  color: #FEB038; /* Hover color from the palette */
+  color: #FFD700; /* Updated hover color */
   transform: translateY(-2px); /* Slight lift effect */
 }
 

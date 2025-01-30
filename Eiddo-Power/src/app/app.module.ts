@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,8 +26,8 @@ import { ProjectsComponent } from './projects/projects.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    FaqComponent,
     ContactComponent,
+    FaqComponent,
     ServicesComponent,
     AboutComponent,
     ProjectsComponent
@@ -35,7 +38,11 @@ import { ProjectsComponent } from './projects/projects.component';
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [
     provideAnimationsAsync()
