@@ -17,9 +17,11 @@
 .contact-container {
   flex: 1;
   max-width: 800px;
-}
-.location{
-  padding-right: 10px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+  border: 2px solid #153361; /* Highlight border */
 }
 
 .contact-header {
@@ -28,7 +30,7 @@
 }
 
 .contact-header h2 {
-  color: #153361; /* Updated color */
+  color: #153361; /* Primary color */
   font-size: 2.5em;
   margin-bottom: 15px;
 }
@@ -40,20 +42,18 @@
 
 .contact-content {
   display: flex;
-  justify-content: space-between;
-  background: #f2f4f7;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-info {
-  flex: 1;
-  padding-right: 20px;
+ /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .contact-info h3 {
-  color: #153361; /* Updated color */
+  color: #153361; /* Primary color */
   font-size: 1.8em;
   margin-bottom: 20px;
 }
@@ -65,7 +65,7 @@
 }
 
 .info-item mat-icon {
-  color: #153361; /* Updated color */
+  color: #153361; /* Primary color */
   margin-right: 10px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .business-hours h4 {
-  color: #153361; /* Updated color */
+  color: #153361; /* Primary color */
   margin-bottom: 10px;
 }
 
@@ -84,7 +84,6 @@
 }
 
 .contact-form {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -105,7 +104,7 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #153361; /* Updated color */
+  border-color: #153361; /* Primary color */
 }
 
 .message-input {
@@ -114,22 +113,24 @@
 }
 
 button[type="submit"] {
-  background-color: #153361; /* Updated color */
+  background-color: #153361; /* Primary color */
   color: white;
   padding: 15px 30px;
   border-radius: 30px;
   border: none;
   font-size: 1.1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
 }
 
 button[type="submit"]:hover {
-  background-color: #0d274d; /* Updated color */
+  background-color: #0d274d; /* Darker primary color */
+  transform: translateY(-2px); /* Slight lift effect */
 }
 
 @media (max-width: 1200px) {
@@ -156,21 +157,4 @@ button[type="submit"]:hover {
   .contact-info {
     margin-bottom: 20px;
   }
-}
-
-/* Floating animation */
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.footer {
-  margin-top: auto; /* add this to make the footer stick to the bottom */
 }
