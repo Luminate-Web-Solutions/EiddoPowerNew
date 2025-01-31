@@ -69,7 +69,7 @@ img {
 
 /* Generic Styling for Service Section Images */
 .services-image {
-  width: 100%;
+  width: 45%;
   height: auto;
   margin-top: 20px;
 }
