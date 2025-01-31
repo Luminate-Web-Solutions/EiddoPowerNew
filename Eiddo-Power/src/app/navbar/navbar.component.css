@@ -11,6 +11,13 @@
 .logo {
   height: 50px; /* Adjust as needed */
   margin-right: 16px;
+  border: none; /* Remove border */
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -40,4 +47,62 @@
 .nav-link[matMenuTriggerFor] {
   display: flex;
   align-items: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    margin: 4px 8px; /* Decreased margin */
+    width: 100%;
+    text-align: left;
+    background-color: #153361; /* Set background color to black */
+    padding: 8px; /* Decreased padding */
+    font-size: 0.6rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+
+  .logo {
+    height: 40px; /* Adjust as needed */
+  }
+
+  .nav-link {
+    font-size: 0.6rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media (max-width: 340px) {
+  .navbar {
+    padding: 6px 10px;
+  }
+
+  .logo {
+    height: 35px; /* Adjust as needed */
+  }
+
+  .nav-link {
+    font-size: 0.5rem; /* Decreased font size */
+    margin: 4px 0; /* Decreased margin */
+    padding: 6px; /* Decreased padding */
+  }
 }
