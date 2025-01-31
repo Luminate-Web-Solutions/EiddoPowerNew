@@ -1,4 +1,4 @@
-
+/* Base Styles */
 .about-container {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -10,74 +10,46 @@
   background-color: #fefefe;
   margin-bottom: 20px;
 }
-  
+
 .about-hero {
   text-align: center;
-  padding: 40px 20px; 
-  background-color: #f4f4f4; 
+  padding: 40px 20px;
+  background-color: #f4f4f4;
   margin-bottom: 10px;
 }
-.about-hero {
-  text-align: center;
-  padding: 40px 20px; 
-  background-color: #f4f4f4; 
-  margin-bottom: 10px;
-}
-  
+
 .about-hero h1 {
   color: #2c3e50;
-  font-size: 3rem; 
+  font-size: 3rem;
   margin-bottom: 10px;
 }
-.about-hero h1 {
-  color: #2c3e50;
-  font-size: 3rem; 
-  margin-bottom: 10px;
-}
-  
+
 .about-tagline {
   color: #34495e;
   font-size: 1.2rem;
 }
-.about-tagline {
-  color: #34495e;
-  font-size: 1.2rem;
-}
-  
-  
-.about-intro, .about-vision-mission, .about-values {
+
+.about-intro,
+.about-vision-mission,
+.about-values {
   padding: 20px;
   background-color: #f4f4f4;
   text-align: center;
   margin: 10px 0;
 }
-.about-intro, .about-vision-mission, .about-values {
-  padding: 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-  margin: 10px 0;
-}
-  
-.vision-section, .mission-section {
+
+.vision-section,
+.mission-section {
   padding: 20px;
   background-color: #f9f9f9;
 }
-.vision-section, .mission-section {
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-  
+
 .values-list {
   list-style-type: disc;
   margin-left: 20px;
   text-align: left;
 }
-.values-list {
-  list-style-type: disc;
-  margin-left: 20px;
-  text-align: left;
-}
-  
+
 .values-list li {
   margin: 5px 0;
   font-size: 1.1rem;
@@ -134,4 +106,62 @@ img {
   width: 100%;
   height: auto;
   margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-tagline {
+    font-size: 1rem;
+  }
+
+  .intro-image {
+    width: 80%;
+  }
+
+  .ceo-image {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .ceo-message {
+    text-align: center;
+  }
+
+  .values-list {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .values-list li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-tagline {
+    font-size: 0.9rem;
+  }
+
+  .intro-image {
+    width: 100%;
+  }
+
+  .ceo-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .values-list li {
+    font-size: 0.9rem;
+  }
 }
