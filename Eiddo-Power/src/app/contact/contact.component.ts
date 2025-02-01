@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ContactService } from '../services/contact.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact',
@@ -33,17 +33,27 @@ export class ContactComponent implements OnInit {
   onSubmit(): void {
     if (this.contactForm.valid) {
       this.loading = true;
-      this.contactService.submitContactForm(this.contactForm.value).subscribe(
-        response => {
-          this.loading = false;
-          this.snackBar.open('Message sent successfully!', 'Close', { duration: 3000 });
+      this.contactService.submitContactForm(this.contactForm.value).subscribe({
+        next: (response) => {
+          console.log('Success:', response);
+          this.snackBar.open('Message sent successfully!', 'Close', {
+            duration: 3000,
+            horizontalPosition: 'right',
+            verticalPosition: 'top'
+          });
           this.contactForm.reset();
-        },
-        error => {
           this.loading = false;
-          this.snackBar.open('Failed to send message. Please try again.', 'Close', { duration: 3000 });
+        },
+        error: (error) => {
+          console.error('Error:', error);
+          this.snackBar.open('Failed to send message. Please try again.', 'Close', {
+            duration: 3000,
+            horizontalPosition: 'right',
+            verticalPosition: 'top'
+          });
+          this.loading = false;
         }
-      );
+      });
     }
   }
 }

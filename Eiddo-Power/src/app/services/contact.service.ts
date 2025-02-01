@@ -1,17 +1,28 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
+  private apiUrl = './db.php';
 
-  private apiUrl = './submit_contact.php';
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  submitContactForm(formData: any): Observable<any> {
-    return this.http.post(this.apiUrl, formData);
+  submitContactForm(formData: ContactFormData): Observable<any> {
+    return this.http.post('db.php', formData, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    });
   }
 }
