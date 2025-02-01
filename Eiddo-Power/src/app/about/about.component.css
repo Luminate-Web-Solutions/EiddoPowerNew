@@ -11,24 +11,63 @@
   margin-bottom: 20px;
 }
 
+/* Hero Section */
 .about-hero {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Background Image for Hero Section */
+.about-hero .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Add overlay to make text more readable */
+.about-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 2;
+}
+
+/* Position text over the image */
+.about-hero h1,
+.about-hero .about-tagline {
+  position: relative;
+  z-index: 3;
+  color: #ffffff; /* White text for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
   text-align: center;
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-  margin-bottom: 10px;
 }
 
 .about-hero h1 {
-  color: #2c3e50;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 10px;
 }
 
 .about-tagline {
-  color: #34495e;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
 }
 
+/* General Sections */
 .about-intro,
 .about-vision-mission,
 .about-values {
@@ -64,22 +103,16 @@ img {
   margin: 0 auto;
 }
 
-/* Styling for the Hero Image */
-.hero-image {
-  width: 100%;
-  height: 400px; /* Adjust height based on your preference */
-  object-fit: cover;
-}
-
-/* Styling for the Intro Image */
+/* Styling for Additional Images */
 .intro-image {
   width: 40%;
   height: auto;
   margin-top: 20px;
 }
 
-/* Vision and Mission Image */
-.vision-mission-image {
+.vision-mission-image,
+.values-image,
+.team-image {
   width: 100%;
   height: auto;
   margin-top: 20px;
@@ -94,22 +127,13 @@ img {
   float: left;
 }
 
-/* Values Image */
-.values-image {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-/* Team Image */
-.team-image {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+  .about-hero {
+    min-height: 250px;
+    padding: 40px 15px;
+  }
+
   .about-hero h1 {
     font-size: 2rem;
   }
@@ -144,12 +168,17 @@ img {
 }
 
 @media (max-width: 480px) {
+  .about-hero {
+    min-height: 200px;
+    padding: 30px 10px;
+  }
+
   .about-hero h1 {
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
   }
 
   .about-tagline {
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
   }
 
   .intro-image {
