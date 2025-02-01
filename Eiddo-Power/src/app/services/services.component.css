@@ -1,72 +1,32 @@
-/* General Styles */
+/* services.component.css */
 .services-container {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #fefefe;
-    margin-bottom: 20px;
-  }
-  
- 
-  
-  .services-hero h1 {
-    color: #2c3e50;
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .services-tagline {
-    color: #34495e;
-    font-size: 1.2rem;
-  }
-  
-  .services-section {
-    padding: 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .services-details {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .services-list {
-    list-style-type: disc;
-    margin-left: 20px;
-    text-align: left;
-  }
-  
-  .services-list li {
-    margin: 5px 0;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
-  /* Ensuring all images scale well on different devices */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin-bottom: 20px;
+}
+/* Hero Section */
+.services-hero h1 {
+  color: #2c3e50;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.services-tagline {
+  color: #34495e;
+  font-size: 1.2rem;
+}
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-/* Styling for the Hero Image */
-
-
-/* Generic Styling for Service Section Images */
-.services-image {
-  width: 45%;
-  height: auto;
-  margin-top: 20px;
-}
-
-/* Optional: For smaller section images, e.g., PPP */
 .services-image {
   max-width: 80%;
   margin: 20px auto;
@@ -91,24 +51,6 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* Update services sections */
-.services-list {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 1000px;
-}
-
-.services-list h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-}
-
-.services-list p, 
-.services-list li {
-  font-size: clamp(1rem, 2vw, 1.1rem);
-}
-
-/* Update image styling */
 .services-hero-image {
   width: 100%;
   height: clamp(200px, 40vw, 400px);
@@ -121,44 +63,6 @@ img {
   height: auto;
   margin: 20px auto;
 }
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .services-container {
-    padding: 10px;
-  }
-
-  .services-hero {
-    padding: 15px;
-  }
-
-  .services-list {
-    padding: 15px;
-  }
-
-  .services-list ul {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .services-container {
-    padding: 5px;
-  }
-
-  .services-hero {
-    padding: 10px;
-  }
-
-  .services-list {
-    padding: 10px;
-  }
-
-  .services-list ul {
-    padding-left: 15px;
-  }
-}
-
 .services-hero {
   position: relative;
   width: 100%;
@@ -203,25 +107,136 @@ img {
   max-width: 800px;
 }
 
-/* Media Queries */
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(21, 51, 97, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #FEB038;
+}
+
+.mat-icon{
+  height: 50px;
+  width: 50px;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #153361;
+  margin-bottom: 20px;
+}
+
+.service-card h2 {
+  color: #153361;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.service-features li:last-child {
+  border-bottom: none;
+}
+
+.feature-icon {
+  color: #FEB038;
+  margin-right: 10px;
+}
+
+/* Image Sections */
+.image-section {
+  position: relative;
+  min-height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 40px 0;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 60%, rgba(0,0,0,0.7));
+}
+
+.image-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  color: white;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .services-hero {
-    min-height: 250px;
-    padding: 40px 15px;
+      height: 50vh;
+      min-height: 400px;
+  }
+  
+  .services-grid {
+      grid-template-columns: 1fr;
+      padding: 20px 0;
   }
 }
 
 @media (max-width: 480px) {
   .services-hero {
-    min-height: 200px;
-    padding: 30px 10px;
+      height: 40vh;
+      min-height: 300px;
   }
-
-  .services-hero h1 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-  }
-
-  .services-hero .services-intro {
-    font-size: clamp(0.9rem, 2vw, 1rem);
+  
+  .service-card {
+      padding: 20px;
   }
 }

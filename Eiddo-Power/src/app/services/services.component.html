@@ -1,3 +1,4 @@
+<!-- services.component.html -->
 <div class="services-container">
   <header class="services-hero">
     <!-- Hero Image for the background -->
@@ -8,52 +9,60 @@
     </p>
   </header>
 
-  <section class="services-list">
-    <h2>Engineering Services</h2>
-    <!-- Engineering Services Image -->
-    <img src="Engineering Services.jpg" alt="Engineering Services" class="services-image">
-    <p>
-      Eiddo Power actively collaborates with government bodies and private entities through the Public-Private Partnership (PPP) model to deliver large-scale renewable energy projects. Our role in the PPP framework includes:
-    </p>
-    <ul>
-      <li><strong>Project Design and Development:</strong> Working with public and private stakeholders to conceptualize and implement solar and renewable energy projects.</li>
-      <li><strong>Execution of Grid-Scale Projects:</strong> Developing and operating grid-scale solar power plants that meet the needs of government utilities and private customers.</li>
-      <li><strong>Sustainability in Infrastructure:</strong> Ensuring that all projects under the PPP model align with sustainability goals and provide long-term benefits to communities and stakeholders.</li>
-      <li><strong>Long-Term Power Supply Agreements:</strong> Providing affordable and fixed-price renewable energy under Power Purchase Agreements (PPAs) to utilities and commercial entities.</li>
-    </ul>
-    <p>
-      The PPP model allows us to leverage collective expertise and resources, enabling the successful delivery of impactful renewable energy projects that align with national energy transition goals.
-    </p>
-  </section>
+  <div class="services-grid">
+    <!-- Engineering Services -->
+    <div class="service-card">
+      <mat-icon class="service-icon">engineering</mat-icon>
+      <h2>Engineering Services</h2>
+      <p>Comprehensive solutions for sustainable energy infrastructure</p>
+      <ul class="service-features">
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Solar PV System Design</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Grid Integration Solutions</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Structural Engineering</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Project Management</li>
+      </ul>
+    </div>
 
-  <section class="services-list">
-    <h2>Public-Private Partnership (PPP)</h2>
-    <!-- PPP Image -->
-    <img src="Public-Private Partnership (PPP).jpg" alt="Public-Private Partnership" class="services-image">
-    <p>
-      We empower businesses to optimize energy usage, reduce costs, and embrace sustainability:
-    </p>
-    <ul>
-      <li><strong>Energy Audits and Consulting:</strong> In-depth evaluations to identify inefficiencies and provide actionable improvement strategies.</li>
-      <li><strong>Energy Management System Design:</strong> Customized systems to streamline energy consumption and enhance operational efficiency.</li>
-      <li><strong>Energy Monitoring and Control:</strong> Advanced systems for real-time monitoring and control to reduce costs and improve performance.</li>
-      <li><strong>Renewable Energy Integration:</strong> Expert consulting to incorporate solar, wind, and hybrid energy systems into existing infrastructure.</li>
-      <li><strong>Sustainability Consulting:</strong> Strategic guidance on adopting environmentally responsible practices to achieve sustainability goals.</li>
-    </ul>
-  </section>
+    <!-- PPP Services -->
+    <div class="service-card">
+      <mat-icon class="service-icon">handshake</mat-icon>
+      <h2>Public-Private Partnerships</h2>
+      <p>Collaborative solutions for large-scale energy projects</p>
+      <ul class="service-features">
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Project Development</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Risk Management</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Long-term PPAs</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Stakeholder Alignment</li>
+      </ul>
+    </div>
 
-  <section class="services-list">
-    <h2>Energy Management Services</h2>
-    <!-- Energy Management Image -->
-    <img src="Energy Management Services.jpg" alt="Energy Management" class="services-image">
-    <p>
-      As a leader in solar energy, Eiddo Power offers turnkey EPC (Engineering, Procurement, and Construction) solutions to deliver seamless execution and exceptional results:
-    </p>
-    <ul>
-      <li><strong>Turnkey Solar EPC Solutions:</strong> End-to-end services for ground-mounted and rooftop solar projects, including conceptualization, design, and execution.</li>
-      <li><strong>Design, Engineering, Procurement, and Construction:</strong> Customized solar power plant designs tailored to specific energy needs.</li>
-      <li><strong>Solar Panel Installation:</strong> Installation, testing, and commissioning for reliable and efficient energy generation.</li>
-      <li><strong>Operation and Maintenance Services:</strong> Comprehensive monitoring and maintenance to maximize solar power plant performance and longevity.</li>
-    </ul>
-  </section>
+    <!-- Energy Management -->
+    <div class="service-card">
+      <mat-icon class="service-icon">monitor_heart</mat-icon>
+      <h2>Energy Management</h2>
+      <p>Optimizing energy usage for maximum efficiency</p>
+      <ul class="service-features">
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Smart Monitoring Systems</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Energy Audits</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Demand Response</li>
+        <li><mat-icon class="feature-icon">check_circle</mat-icon>Sustainability Reporting</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image Section 1 -->
+  <div class="image-section" style="background-image: url('solar-farm.jpg');">
+    <div class="image-content">
+      <h2>Grid-Scale Solar Solutions</h2>
+      <p>Utility-scale photovoltaic systems with smart grid integration</p>
+    </div>
+  </div>
+
+  <!-- Image Section 2 -->
+  <div class="image-section" style="background-image: url('energy-management.jpg');">
+    <div class="image-content">
+      <h2>Smart Energy Management</h2>
+      <p>Real-time monitoring and optimization of energy consumption</p>
+    </div>
+  </div>
 </div>
