@@ -35,6 +35,21 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "submit_contact.php",
+                "input": "src/app",
+                "output": "/"
+              },
+              {
+                "glob": "cors.php",
+                "input": "src/app",
+                "output": "/"
+              },
+              {
+                "glob": ".htaccess",
+                "input": "src/app",
+                "output": "/"
               }
             ],
             "styles": [
@@ -94,12 +109,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "submit_contact.php",
-                "input": "src/app",
-                "output": "/"
               }
+
             ],
             "styles": [
               "src/styles.css"
