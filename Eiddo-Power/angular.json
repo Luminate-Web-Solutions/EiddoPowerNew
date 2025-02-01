@@ -47,6 +47,16 @@
                 "output": "/"
               },
               {
+                "glob": "database.php",
+                "input": "src/app",
+                "output": "/" 
+              },
+              {
+                "glob": "db.php",
+                "input": "src/app",
+                "output": "/"
+              },
+              {
                 "glob": ".htaccess",
                 "input": "src/app",
                 "output": "/"

@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-require './phpmailer/phpmailer/src/Exception.php';
+require './vendor/phpmailer/phpmailer/src/Exception.php';
 require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require './vendor/phpmailer/phpmailer/src/SMTP.php';
 
@@ -71,16 +71,16 @@ try {
     
     // Server settings
     $mail->isSMTP();
-    $mail->Host = 'hostname.com';
+    $mail->Host = 'mail.eiddopower.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'user@domain.com';
-    $mail->Password = 'Password';
+    $mail->Username = '';
+    $mail->Password = '';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
     
     // Recipients
-    $mail->setFrom('user@domain.com', 'String');
-    $mail->addAddress('user@domain.com', 'String');
+    $mail->setFrom('info@eiddopower.com', 'Eiddopower');
+    $mail->addAddress('info@eiddopower.com', 'Eiddopower');
     $mail->addReplyTo($data['email'], $data['name']);
     
     // Content
@@ -101,6 +101,7 @@ try {
         'success' => true,
         'message' => 'Message sent successfully and stored in database'
     ]);
+    exit;
 } catch (Exception $e) {
     http_response_code(500);
     header('Content-Type: application/json');

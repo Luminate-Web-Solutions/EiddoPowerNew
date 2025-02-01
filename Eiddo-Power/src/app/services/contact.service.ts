@@ -19,10 +19,11 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   submitContactForm(formData: ContactFormData): Observable<any> {
-    return this.http.post('db.php', formData, {
+    return this.http.post(this.apiUrl, formData, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
-      })
+      }),
+       responseType: 'json'
     });
   }
 }

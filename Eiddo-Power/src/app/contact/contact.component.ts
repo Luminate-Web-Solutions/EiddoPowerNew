@@ -46,7 +46,8 @@ export class ContactComponent implements OnInit {
         },
         error: (error) => {
           console.error('Error:', error);
-          this.snackBar.open('Failed to send message. Please try again.', 'Close', {
+          const errorMessage = error.error.message || 'Failed to send message. Please try again.';
+          this.snackBar.open(errorMessage, 'Close', {
             duration: 3000,
             horizontalPosition: 'right',
             verticalPosition: 'top'
