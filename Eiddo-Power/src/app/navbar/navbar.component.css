@@ -51,6 +51,12 @@
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
+
+  .mat-toolbar {
+    width: 395px;
+  }
+
+
   .menu-icon {
     display: block;
   }

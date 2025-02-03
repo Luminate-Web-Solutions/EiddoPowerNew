@@ -213,6 +213,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero-video-container{
+    width: 370px;
+    margin-left: -86px;
+    margin-bottom: 10px;
+  }
+
+  
   .hero-overlay h1 {
     font-size: 2rem;
   }
@@ -224,14 +231,28 @@
   .solar-types {
     flex-direction: column;
     margin-top: 20px;
+    width: 340px;
+    margin-left: -86px;
+
   }
 
   .solar-box {
     margin-bottom: 20px;
+    max-width: 800px;
+  }
+
+  .intro-section {
+    width: 335px;
+    margin-left: -86px;
+  }
+
+  .intro-section p {
+    width: 320px;
   }
 
   .intro-content {
     flex-direction: column;
+    width: 350px;
   }
 
   .intro-image {
@@ -241,6 +262,11 @@
 
   .intro-text {
     text-align: center;
+  }
+
+  .services-section {
+    width: 340px;
+    margin-left: -86px;
   }
 
   .service-list {
