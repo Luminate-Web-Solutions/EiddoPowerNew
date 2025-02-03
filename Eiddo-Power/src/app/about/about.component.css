@@ -185,10 +185,31 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
+  .hero-image{
+    width: 350px;
+    margin-left: -110px;
+    margin-right: 100px;
+  }
+
+  .about-container h1{
+    width: 350px;
+  }
+
+  .about-tagline{
+    width: 380px;
+  }
+
+  .about-content{
+    width: 350px;
+    margin-left: -110px;
+  }
+
   .about-hero {
       height: 40vh;
       min-height: 300px;
+      width: 420px;
+      margin-left: -86px;
   }
   
   .mission-card {
