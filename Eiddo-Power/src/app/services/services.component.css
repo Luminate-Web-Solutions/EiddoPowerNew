@@ -238,5 +238,14 @@ img {
   
   .service-card {
       padding: 20px;
+      width: 100%;
+  }
+
+  .services-container{
+    margin-left: -110px;
+    width: 320px;
+  }
+  .image-section{
+    width: 360px;
   }
 }
