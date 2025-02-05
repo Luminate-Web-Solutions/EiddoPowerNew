@@ -18,9 +18,11 @@
 }
 
 .services-tagline {
-  color: #34495e;
-  font-size: 1.2rem;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #ffcc01;
+  z-index: 3;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -111,10 +113,10 @@ img {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
   max-width: 1280px;
   margin: 0 auto;
   padding: 40px 0;
+  gap: 14px;
 }
 
 /* Service Card */
@@ -127,6 +129,8 @@ img {
   position: relative;
   overflow: hidden;
 }
+
+
 
 .service-card:hover {
   transform: translateY(-10px);
@@ -172,10 +176,9 @@ img {
 }
 
 .service-features li {
-  padding: 12px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #eee;
   display: flex;
-  align-items: center;
 }
 
 .service-features li:last-child {
@@ -222,6 +225,7 @@ img {
   .services-hero {
       height: 50vh;
       min-height: 400px;
+      width: 290px;
   }
   
   .services-grid {

@@ -12,6 +12,11 @@
   object-fit: cover;
 }
 
+.project-tagline{
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #ffcc01;
+}
+
 .hero-content {
   position: absolute;
   top: 50%;

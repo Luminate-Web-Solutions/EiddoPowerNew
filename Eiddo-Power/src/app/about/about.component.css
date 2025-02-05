@@ -54,7 +54,6 @@
   padding: 0 20px;
   z-index: 2; /* Ensure text is above the tint */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 700;
 }
 
 /* Content Sections */
@@ -168,7 +167,7 @@
   background: white;
   border-radius: 12px;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
