@@ -71,7 +71,7 @@
     margin: 4px 8px; /* Decreased margin */
     width: 100%;
     text-align: left;
-    background-color: #FFCF00; /* Set background color to black */
+    background-color: #FFCF00;
     padding: 8px; /* Decreased padding */
     font-size: 0.6rem; /* Adjust font size for smaller screens */
   }
