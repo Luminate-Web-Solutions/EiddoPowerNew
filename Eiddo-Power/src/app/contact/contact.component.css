@@ -129,6 +129,17 @@ button[type="submit"] {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
 }
 
+/* Add to contact.component.css */
+.form-group .g-recaptcha {
+  margin: 15px 0;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
 button[type="submit"]:hover {
   background-color: #0d274d; /* Darker primary color */
   transform: translateY(-2px); /* Slight lift effect */

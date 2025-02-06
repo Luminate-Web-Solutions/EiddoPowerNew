@@ -19,6 +19,20 @@ require './vendor/phpmailer/phpmailer/src/SMTP.php';
 // Set CORS headers
 setCorsHeaders();
 
+
+$recaptchaSecret = '';
+$recaptchaResponse = $_POST['recaptchaToken'];
+
+$verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecret}&response={$recaptchaResponse}");
+$responseData = json_decode($verify);
+
+if (!$responseData->success) {
+  // Handle invalid CAPTCHA
+  http_response_code(400);
+  echo json_encode(['message' => 'Invalid CAPTCHA. Please try again.']);
+  exit;
+}
+
 // Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
