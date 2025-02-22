@@ -10,12 +10,12 @@ import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'about-us', component: AboutComponent },
+  { path: 'our-services', component: ServicesComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: 'faq', component: FaqComponent },
-  { path: 'whychooseus', component: WhychooseusComponent }, // Correct usage
-  { path: 'projects', component: ProjectsComponent }, // Correct usage
+  { path: 'why-choose-us', component: WhychooseusComponent }, // Correct usage
+  { path: 'our-projects', component: ProjectsComponent }, // Correct usage
 ];
 
 @NgModule({
